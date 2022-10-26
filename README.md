@@ -1,23 +1,29 @@
 # UnitTest
 
 #### 介绍
-C语言单元测试框架
-
-#### 软件架构
-软件架构说明
+C语言单元测试框架，参考Unity代码：
+实现了测试用例的自动装载；
+实现了用例组自动绑定，无需每个测试用例都要输入用例组名。
+示例Demo运行效果如下所示：
+================ Start testing ==================
+GROUP G1 
+TEST(integer_compare) ==> expected is 9 but 7
+GROUP G2 
+TEST(string_compare) ==> passed
+GROUP a2 
+TEST(float_compare) ==> expected is 0.300005 but 0.300006
+================  End testing  ==================
+total testcase 3,falsed 2.
 
 
 #### 安装教程
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+参见软件Demo。
+
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+参见软件Demo。
 
 #### 参与贡献
 

@@ -1,3 +1,23 @@
+/**
+  ******************************************************************************
+  * @file    unittest.h
+  * @author  Kevin Gao
+  * @version V1.0.0
+  * @date    26-October-2022
+  * @brief   This file provides all unint test functions.
+  ******************************************************************************
+  * @attention
+  *
+  * Copyright (c) 2022 Kevin Gao.
+  * All rights reserved.
+  *
+  * This software is licensed under terms that can be found in the LICENSE file
+  * in the root directory of this software component.
+  * If no LICENSE file comes with this software, it is provided AS-IS.
+  *
+  ******************************************************************************
+  */
+
 #ifndef __UNIT_TEST_H__
 #define __UNIT_TEST_H__
 
@@ -53,11 +73,11 @@ do{																			\
 	}																		\
 }while(0)
 
-#define UT_FLOAT_EQUAL(actual,expected,delta)									\
+#define UT_FLOAT_EQUAL(actual,expected,delta)								\
 do{																			\
-	if(ut_float_equal((actual),(expected),(delta)))								\
+	if(ut_float_equal((actual),(expected),(delta)))							\
 	{																		\
-		printf("expected is %lf but %lf\n",(expected),(actual));		\
+		printf("expected is %lf but %lf\n",(expected),(actual));			\
 		return;																\
 	}																		\
 }while(0)

@@ -1,8 +1,31 @@
+/**
+  ******************************************************************************
+  * @file    unittest.c
+  * @author  Kevin Gao
+  * @version V1.0.0
+  * @date    26-October-2022
+  * @brief   This file provides all unint test functions.
+  ******************************************************************************
+  * @attention
+  *
+  * Copyright (c) 2022 Kevin Gao.
+  * All rights reserved.
+  *
+  * This software is licensed under terms that can be found in the LICENSE file
+  * in the root directory of this software component.
+  * If no LICENSE file comes with this software, it is provided AS-IS.
+  *
+  ******************************************************************************
+  */
+
 #include "unittest.h"
 #include <math.h>
 
-extern testcase testcase$$Base;
-extern testcase testcase$$Limit;
+#define start testcase$$Base
+#define end testcase$$Limit
+
+extern testcase start;
+extern testcase end;
 
 uint32_t tctotal=0,tcfalse=0;
 
@@ -11,7 +34,7 @@ void testmain(int argc,const char **argv)
 	const char *tg = NULL;
 	
 	printf("================ Start testing ==================\n");
-	for(testcase *tc = &testcase$$Base;tc<&testcase$$Limit;tc++)
+	for(testcase *tc = &start;tc<&end;tc++)
 	{
 		if(tg != tc->tg)
 		{

@@ -33,7 +33,7 @@ TEARDOWN()
 
 TEST(integer_compare)
 {
-	UT_INT_EQUAL(3+4,9);
+	UT_INT_EQUAL(3+4,7);
 }
 #undef _GROUP_
 

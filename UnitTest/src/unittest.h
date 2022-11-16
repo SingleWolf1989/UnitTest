@@ -50,9 +50,9 @@ typedef struct
 #define _TEARDOWN(tg)		__TEARDOWN(tg)
 #define _TESTCASE(tg,tc)	__TESTCASE(tg,tc)
 
-#define SETUP()			_SETUP(_GROUP_)
-#define TEARDOWN()		_TEARDOWN(_GROUP_)
-#define TEST(tc)		_TESTCASE(_GROUP_,tc)
+#define SETUP()				_SETUP(_GROUP_)
+#define TEARDOWN()			_TEARDOWN(_GROUP_)
+#define TEST(tc)			_TESTCASE(_GROUP_,tc)
 
 
 #define UT_INT_EQUAL(actual,expected)										\
